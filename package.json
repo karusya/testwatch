@@ -1,0 +1,12 @@
+{
+  "name": "testwatch",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
