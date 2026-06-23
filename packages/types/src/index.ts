@@ -67,3 +67,17 @@ export interface TestHistory {
     }[];
 
 }
+
+export interface ProjectSource {
+  type: 'jenkins' | 'mock'
+  baseUrl?: string      // jenkins only
+  jobName?: string      // jenkins only
+  userEnv?: string      // name of env var holding the username
+  tokenEnv?: string     // name of env var holding the API token
+}
+
+export interface Project {
+  id: string            // url-safe slug, e.g. "web-e2e"
+  name: string          // display name, e.g. "Web E2E Tests"
+  source: ProjectSource
+}
